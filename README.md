@@ -35,4 +35,4 @@ It simulates **speech recognition**, **intent detection**, **MQTT communication*
 
 1. **Download or clone this repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/voice-controlled-smart-home.git
+   git clone https:[ https://github.com/Sudharshanjatothu/Voice-Controlled-Smart_Home-System.git]
