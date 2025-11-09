@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice-Controlled Smart Home Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🎙 Voice-Controlled Smart Home</h1>
+    <p>AI-powered automation with voice control, IoT sensors, and cloud data visualization.</p>
+  </header>
+
+  <main>
+    <section class="input-panel">
+      <h2>🎤 Speak or Upload Audio</h2>
+      <div class="btn-group">
+        <button id="micBtn">🎙 Start Listening</button>
+        <input type="file" id="audioUpload" accept="audio/*" />
+      </div>
+      <p id="statusMsg">Click “Start Listening” or upload a file to simulate a voice command.</p>
+    </section>
+
+    <section>
+      <h2>🧠 Recognized Speech</h2>
+      <div id="recognizedText" class="output-box"></div>
+    </section>
+
+    <section>
+      <h2>🔍 Intent Detection</h2>
+      <div id="intentOutput" class="output-box"></div>
+    </section>
+
+    <section>
+      <h2>📡 MQTT Simulation</h2>
+      <div id="mqttOutput" class="output-box"></div>
+    </section>
+
+    <!-- 🏠 Device Dashboard -->
+    <section id="device-dashboard">
+      <h2>🏠 Live Device Tracking</h2>
+      <div class="devices">
+        <div class="device-card" id="light">
+          💡 <span>Light</span>
+          <div class="status">OFF</div>
+        </div>
+        <div class="device-card" id="fan">
+          🌀 <span>Fan</span>
+          <div class="status">OFF</div>
+        </div>
+        <div class="device-card" id="pump">
+          💧 <span>Pump</span>
+          <div class="status">OFF</div>
+        </div>
+        <div class="device-card" id="thermostat">
+          🌡️ <span>Temperature</span>
+          <div class="status">24°C</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📊 Live Data Graph -->
+    <section id="chart-section">
+      <h2>📈 Live Sensor Data</h2>
+      <canvas id="sensorChart"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed by Shaik Khasim Basha | Jatothu Sudharshan | Kuppuri Nagasai</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
